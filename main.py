@@ -1,12 +1,6 @@
 import pygame
 from config import WIDTH, HEIGHT, FPS, BLACK, WHITE, GRAY, LABEL_FONT
-
-pygame.init()
-
-screen = pygame.display.set_mode([WIDTH, HEIGHT])
-pygame.display.set_caption('Gamelan Drum Machine')
-
-clock = pygame.time.Clock()
+from setup import screen, clock
 
 run = True
 
