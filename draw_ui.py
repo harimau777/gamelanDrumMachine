@@ -1,8 +1,7 @@
 import pygame
 from config import WIDTH, HEIGHT, GRAY
-from setup import screen
 
-def draw_ui():
+def draw_ui(screen):
     PLAY_CONTROLS_HEIGHT = 100
     RHYTHM_DISPLAY_HEIGHT = 200
     INSTRUMENT_CONTROLS_HEIGHT = HEIGHT - PLAY_CONTROLS_HEIGHT - RHYTHM_DISPLAY_HEIGHT

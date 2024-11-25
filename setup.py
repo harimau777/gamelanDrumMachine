@@ -1,9 +1,10 @@
 import pygame
 from config import WIDTH, HEIGHT
 
-pygame.init()
+def setup():
+    screen = pygame.display.set_mode([WIDTH, HEIGHT])
+    pygame.display.set_caption('Gamelan Drum Machine')
 
-screen = pygame.display.set_mode([WIDTH, HEIGHT])
-pygame.display.set_caption('Gamelan Drum Machine')
+    clock = pygame.time.Clock()
 
-clock = pygame.time.Clock()
+    return screen, clock
